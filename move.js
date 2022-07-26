@@ -1,5 +1,6 @@
 function move(element) {
     element.style.position = 'fixed'
+   
 
     function moveToCoordinates(left, bottom) {
         element.style.left = left + 'px'
@@ -49,6 +50,7 @@ function move(element) {
                 direction = 'south'
             }
             callback(direction)
+    
         })
         
         document.addEventListener('keyup', function(e){
